@@ -11,7 +11,7 @@ int print(struct poke mon){
 //strcopy
 int main(){
   struct poke a;
-  a.name[10] = 'cyndaquil';
+  strcpy(a.name, "cyndaquil");
   a.index = 155;
 
   printf("%s\n",a.name);
