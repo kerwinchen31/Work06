@@ -56,5 +56,6 @@ int main(){
   struct poke randPoke = choosePoke(pokedex);
   printf("Random pokemon: %s, Index: %d\n", randPoke.name, randPoke.index);
 
+  // printf("%s",myprint(j));
   return 0;
 }

@@ -3,10 +3,9 @@
 #include <string.h>
 #include "func.h"
 
-struct poke {char name[10]; int index;};
 
 /*
-int print(struct poke mon){
+int myprint(struct poke mon){
   printf("the name of %c is %s of pokedex %d", mon, mon.name, mon.index);
   return 0;
   }*/
