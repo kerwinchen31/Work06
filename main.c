@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 #include "func.h"
 
 int main(){
@@ -58,8 +59,8 @@ int main(){
 
   myprint(randPoke);
 
-  changeVals(a, "victini", 494);
-  myprint(a);
+  changeVals(b, "victini", 494);
+  myprint(b);
   
   return 0;
 }
