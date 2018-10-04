@@ -3,14 +3,18 @@
 #include <string.h>
 #include "func.h"
 
-
-/*
-int myprint(struct poke mon){
-  printf("the name of %c is %s of pokedex %d", mon, mon.name, mon.index);
-  return 0;
-  }*/
-
 struct poke choosePoke(struct poke array[]){
   srand(time(0));
   return array[rand()%9];
+}
+
+int myprint(struct poke mon){
+  printf("The pokedex index of %s is %d", mon.name, mon.index);
+  return 0;
+}
+
+int changeVals(struct poke mon, char *s, int index){
+  mon.name = s;
+  mon.index = index;
+  return 0;
 }
