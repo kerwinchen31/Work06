@@ -6,7 +6,7 @@
 
 struct poke choosePoke(struct poke array[]){
   srand(time(0));
-  return array[rand()%9];
+  return array[rand()%10];
 }
 
 int myprint(struct poke mon){
@@ -14,8 +14,8 @@ int myprint(struct poke mon){
   return 0;
 }
 
-int changeVals(struct poke mon, char * s, int ind){
-  strcpy(mon.name, s);
-  mon.index = ind;
+int changeVals(struct poke *mon, char *s, int ind){
+  strcpy(mon->name, s);
+  mon->index = ind;
   return 0;
 }

@@ -58,9 +58,13 @@ int main(){
   printf("Random pokemon: %s, Index: %d\n", randPoke.name, randPoke.index);
 
   myprint(randPoke);
-
-  changeVals(b, "victini", 494);
-  myprint(b);
+  
+  changeVals(&a, "victini", 494);
+  
+  for(int x=0; x<10; x++){
+    printf("%d: %s, %d\n", x, pokedex[x].name, pokedex[x].index);
+  }
+  myprint(a);
   
   return 0;
 }
